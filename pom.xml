@@ -30,6 +30,16 @@
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
 
+        <!-- 搜索java.security文件中：crypto.policy=unlimited，并去掉注释；添加org.springframework.security依赖，实现spring config 对称加密 -->
+        <!-- JAVA SE 8 $JAVA_HOME/jre/lib/security/java.security-->
+        <!-- JAVA SE 11 $JAVA_HOME/conf/security/java.security-->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-rsa</artifactId>
+            <version>1.0.9.RELEASE</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
