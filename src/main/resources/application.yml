@@ -39,6 +39,7 @@ spring:
           native:
 #              searchLocations: file://<chapter 3>/confsvr/src/main/resources/config/licensingservice,
 #                               file://<chapter 3>confsvr/src/main/resources/config/organizationservice
-            searchLocations: classpath:config/contentservice
+            searchLocations: classpath:config/contentservice,
+                             classpath:config/accountservice
           encrypt:
             enabled: false #配置Spring Cloud Config 不在服务器端解密属性
